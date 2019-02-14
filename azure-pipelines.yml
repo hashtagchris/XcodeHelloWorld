@@ -9,7 +9,17 @@ trigger:
 pool:
   vmImage: 'macOS-10.13'
 
+variables:
+  P12Password: 'secret'
+
 steps:
+- task: InstallAppleCertificate@2
+  certSecureFile: foo
+  certPwd: $(P12Password)
+
+- task: InstallAppleProvisioningProfile@1
+  provProfileSecureFile: bar
+
 - task: Xcode@5
   inputs:
     actions: 'build'
