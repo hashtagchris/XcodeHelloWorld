@@ -19,7 +19,7 @@ steps:
 
 - task: InstallAppleProvisioningProfile@1
   inputs:
-    provProfileSecureFile: 'chrisid_iOSAutoPP_Nov2018.mobileprovision'
+    provProfileSecureFile: '6ffac825-ed27-47d0-8134-95fcf37a666c.mobileprovision'
 
 - task: Xcode@5
   inputs:
