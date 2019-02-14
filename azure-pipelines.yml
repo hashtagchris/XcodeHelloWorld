@@ -14,11 +14,13 @@ variables:
 
 steps:
 - task: InstallAppleCertificate@2
-  certSecureFile: foo
-  certPwd: $(P12Password)
+  inputs:
+    certSecureFile: 'chrisid_iOSAutoPP_Nov2018.mobileprovision'
+    certPwd: $(P12Password)
 
 - task: InstallAppleProvisioningProfile@1
-  provProfileSecureFile: bar
+  inputs:
+    provProfileSecureFile: 'chrisid_iOSDev_Nov2018.p12'
 
 - task: Xcode@5
   inputs:
