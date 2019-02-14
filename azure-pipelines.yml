@@ -9,8 +9,8 @@ trigger:
 pool:
   vmImage: 'macOS-10.13'
 
-variables:
-  P12Password: 'secret'
+# variables:
+#  P12Password: 'secret'
 
 steps:
 - task: InstallAppleCertificate@2
