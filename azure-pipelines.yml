@@ -30,4 +30,4 @@ steps:
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
     signingOption: 'default'
-    useXcpretty: 'false'
+    useXcpretty: 'false' # Makes it easier to diagnose build failures.
