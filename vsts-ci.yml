@@ -14,5 +14,5 @@ steps:
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Release'
-    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    xcodeVersion: '8' # Options: 8, 9, default, specifyPath
     useXcpretty: 'true'     # Switch to false for verbose build output
